@@ -103,7 +103,7 @@ void BotConfig::loadMainConfig (bool isFirstLoad) {
 
    // bind the correct menu key for bot menu...
    if (!game.isDedicated () && !strings.isEmpty (cv_bind_menu_key.str ())) {
-      game.serverCommand ("bind \"%s\" \"yb menu\"", cv_bind_menu_key.str ());
+      game.serverCommand ("bind \"%s\" \"cb menu\"", cv_bind_menu_key.str ());
    }
 }
 
