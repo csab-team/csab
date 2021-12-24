@@ -1,6 +1,6 @@
 //
-// YaPB - Counter-Strike Bot based on PODBot by Markus Klinge.
-// Copyright © 2004-2021 YaPB Project <yapb@jeefo.net>.
+// CSaB - Counter-Strike Bot based on YaPB by jeefo.
+// Copyright © 2021-2022 CSaB Project <bariscodefx@protonmail.com>.
 //
 // SPDX-License-Identifier: MIT
 //
@@ -8,9 +8,9 @@
 #include <yapb.h>
 
 // module interface implementation
-class YaPBModule : public IYaPBModule {
+class CSaBModule : public ICSaBModule {
 public:
-   virtual ~YaPBModule () override = default;
+   virtual ~CSaBModule () override = default;
 
 private:
    Bot *getBot (int index) {
@@ -113,11 +113,11 @@ public:
 };
 
 // export all the stuff, maybe add versioned interface ?
-CR_EXPORT IYaPBModule *GetBotAPI (int version) {
-   if (version != kYaPBModuleVersion) {
+CR_EXPORT ICSaBModule *GetBotAPI (int version) {
+   if (version != kCSaBModuleVersion) {
       return nullptr;
    }
-   static YaPBModule botModule;
+   static CSaBModule botModule;
 
    return &botModule;
 }

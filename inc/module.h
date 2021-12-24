@@ -1,6 +1,6 @@
 //
-// YaPB - Counter-Strike Bot based on PODBot by Markus Klinge.
-// Copyright © 2004-2021 YaPB Project <yapb@jeefo.net>.
+// CSaB - Counter-Strike Bot based on YaPB by jeefo.
+// Copyright © 2021-2022 CSaB Project <bariscodefx@protonmail.com>.
 //
 // SPDX-License-Identifier: MIT
 //
@@ -8,12 +8,12 @@
 #pragma once
 
 // AMX Mod X Module API Version (bump if interface changed)
-constexpr int kYaPBModuleVersion = 1;
+constexpr int kCSaBModuleVersion = 1;
 
 // basic module interface, if you need to additional stuff, please post an issue
-class IYaPBModule {
+class ICSaBModule {
 public:
-   virtual ~IYaPBModule () = default;
+   virtual ~ICSaBModule () = default;
 
 public:
    // get the bot version string

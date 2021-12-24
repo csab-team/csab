@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-#
 
-# YaPB - Counter-Strike Bot based on PODBot by Markus Klinge.
-# Copyright © 2004-2021 YaPB Project <yapb@jeefo.net>.
+# CSaB - Counter-Strike Bot based on YaPB by jeefo.
+# Copyright © 2021-2022 CSaB Project <bariscodefx@protonmail.com>.
 #
 # SPDX-License-Identifier: MIT
 # 
@@ -113,7 +113,7 @@ class BotRelease (object):
       self.version = sys.argv[1]
       self.artifacts = 'artifacts'
 
-      self.cs = CodeSign ("YaPB", "https://yapb.jeefo.net/")
+      self.cs = CodeSign ("CSaB", "https://yapb.jeefo.net/")
 
       if self.cs.has ():
          print ("Code Signing Enabled")
@@ -142,7 +142,7 @@ class BotRelease (object):
          os.makedirs (os.path.join (self.bot_dir, dir), exist_ok=True)
    
    def http_pull (self, url, local_file):
-      http = urllib3.PoolManager (10, headers = {"user-agent": "YaPB"})
+      http = urllib3.PoolManager (10, headers = {"user-agent": "CSaB"})
       data = http.urlopen ("GET", url)
       
       with open (local_file, "wb") as file:

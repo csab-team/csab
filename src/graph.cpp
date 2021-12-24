@@ -1,6 +1,6 @@
 //
-// YaPB - Counter-Strike Bot based on PODBot by Markus Klinge.
-// Copyright © 2004-2021 YaPB Project <yapb@jeefo.net>.
+// CSaB - Counter-Strike Bot based on YaPB by jeefo.
+// Copyright © 2021-2022 CSaB Project <bariscodefx@protonmail.com>.
 //
 // SPDX-License-Identifier: MIT
 //

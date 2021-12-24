@@ -1,6 +1,6 @@
 //
-// YaPB - Counter-Strike Bot based on PODBot by Markus Klinge.
-// Copyright © 2004-2021 YaPB Project <yapb@jeefo.net>.
+// CSaB - Counter-Strike Bot based on YaPB by jeefo.
+// Copyright © 2021-2022 CSaB Project <bariscodefx@protonmail.com>.
 //
 // SPDX-License-Identifier: MIT
 //
@@ -767,8 +767,8 @@ int BotControl::cmdNodeUpload () {
 
    // try to upload the file
    if (http.uploadFile ("http://yapb.ru/upload", strings.format ("%sgraph/%s.graph", graph.getDataDirectory (false), mapName.lowercase ()))) {
-      msg ("Graph file was successfully validated and uploaded to the YaPB Graph DB (%s).", product.download);
-      msg ("It will be available for download for all YaPB users in a few minutes.");
+      msg ("Graph file was successfully validated and uploaded to the CSaB Graph DB (%s).", product.download);
+      msg ("It will be available for download for all CSaB users in a few minutes.");
       msg ("\n");
       msg ("Thank you.");
       msg ("\n");
