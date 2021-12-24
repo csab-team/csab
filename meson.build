@@ -6,10 +6,10 @@
 #
 
 project (
-   'yapb',
+   'csab',
    'cpp',
     
-   version: '4.2',
+   version: '1.0',
    license: 'MIT',
     
    default_options: [
