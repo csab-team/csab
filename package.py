@@ -104,7 +104,7 @@ class BotRelease (object):
          os.chdir (os.environ.get (meson_src_root_env))
       
       self.work_dir = os.path.join (pathlib.Path ().absolute (), "cfg")
-      self.bot_dir = os.path.join (self.work_dir, "addons", "yapb")
+      self.bot_dir = os.path.join (self.work_dir, "addons", "csab")
       self.pkg_dir = os.path.join (pathlib.Path ().absolute (), "pkg")
       
       if len (sys.argv) < 2:
@@ -122,9 +122,9 @@ class BotRelease (object):
 
       os.makedirs (self.pkg_dir, exist_ok=True)
       
-      self.pkg_win32 = os.path.join (self.pkg_dir, "yapb-{}-windows.zip".format (self.version))
-      self.pkg_linux = os.path.join (self.pkg_dir, "yapb-{}-linux.tar.xz".format (self.version))
-      self.pkg_macos = os.path.join (self.pkg_dir, "yapb-{}-macos.zip".format (self.version))
+      self.pkg_win32 = os.path.join (self.pkg_dir, "csab-{}-windows.zip".format (self.version))
+      self.pkg_linux = os.path.join (self.pkg_dir, "csab-{}-linux.tar.xz".format (self.version))
+      self.pkg_macos = os.path.join (self.pkg_dir, "csab-{}-macos.zip".format (self.version))
 
       self.pkg_win32_sfx = self.pkg_win32.replace ("zip", "exe")
       self.pkg_win32_sfx_url = "https://github.com/yapb/setup/releases/latest/download/botsetup.exe"
@@ -172,7 +172,7 @@ class BotRelease (object):
          self.get_graph_file (file)
 
    def unlink_binaries (self):
-      libs = ["yapb.so", "yapb.arm64.so", "yapb.dll", "yapb.dylib"]
+      libs = ["csab.so", "csab.arm64.so", "csab.dll", "csab.dylib"]
       
       for lib in libs:
          path = os.path.join (self.bot_dir, "bin", lib)
@@ -232,7 +232,7 @@ class BotRelease (object):
       os.remove (zfn)
 
    def install_binary (self, ext, unlink_existing = True):
-      lib = "yapb.{}".format (ext)
+      lib = "csab.{}".format (ext)
       binary = os.path.join (self.artifacts, lib)
 
       if os.path.isdir (binary):
