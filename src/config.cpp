@@ -7,8 +7,8 @@
 
 #include <csab.h>
 
-ConVar cv_bind_menu_key ("yb_bind_menu_key", "=", "Bind's specified key for opening bots menu.", false);
-ConVar cv_ignore_cvars_on_changelevel ("yb_ignore_cvars_on_changelevel", "yb_quota,yb_autovacate", "Specifies comma separated list of bot cvars, that will not be overriten by config on changelevel.", false);
+ConVar cv_bind_menu_key ("cb_bind_menu_key", "=", "Bind's specified key for opening bots menu.", false);
+ConVar cv_ignore_cvars_on_changelevel ("cb_ignore_cvars_on_changelevel", "cb_quota,cb_autovacate", "Specifies comma separated list of bot cvars, that will not be overriten by config on changelevel.", false);
 
 BotConfig::BotConfig () {
    m_chat.resize (Chat::Count);
@@ -75,7 +75,7 @@ void BotConfig::loadMainConfig (bool isFirstLoad) {
                if (needsToIgnoreVar (ignore, key) && !strings.matches (value, cvar->string)) {
 
                   // preserve quota number if it's zero
-                  if (strings.matches (cvar->name, "yb_quota") && cv_quota.int_ () <= 0) {
+                  if (strings.matches (cvar->name, "cb_quota") && cv_quota.int_ () <= 0) {
                      engfuncs.pfnCvar_DirectSet (cvar, value);
                      continue;
                   }

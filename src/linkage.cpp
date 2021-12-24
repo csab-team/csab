@@ -7,7 +7,7 @@
 
 #include <csab.h>
 
-ConVar cv_version ("yb_version", product.version.chars (), Var::ReadOnly);
+ConVar cv_version ("cb_version", product.version.chars (), Var::ReadOnly);
 
 gamefuncs_t dllapi;
 newgamefuncs_t newapi;

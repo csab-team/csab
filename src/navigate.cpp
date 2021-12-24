@@ -7,11 +7,11 @@
 
 #include <csab.h>
 
-ConVar cv_whose_your_daddy ("yb_whose_your_daddy", "0", "Enables or disables extra hard difficulty for bots.");
-ConVar cv_path_heuristic_mode ("yb_path_heuristic_mode", "4", "Selects the heuristic function mode. For debug purposes only.", true, 0.0f, 4.0f);
+ConVar cv_whose_your_daddy ("cb_whose_your_daddy", "0", "Enables or disables extra hard difficulty for bots.");
+ConVar cv_path_heuristic_mode ("cb_path_heuristic_mode", "4", "Selects the heuristic function mode. For debug purposes only.", true, 0.0f, 4.0f);
 
-ConVar cv_path_danger_factor_min ("yb_path_danger_factor_min", "200", "Lower bound of danger factor that used to add additional danger to path based on practice.", true, 100.0f, 2400.0f);
-ConVar cv_path_danger_factor_max ("yb_path_danger_factor_max", "400", "Upper bound of danger factor that used to add additional danger to path based on practice.", true, 200.0f, 4800.0f);
+ConVar cv_path_danger_factor_min ("cb_path_danger_factor_min", "200", "Lower bound of danger factor that used to add additional danger to path based on practice.", true, 100.0f, 2400.0f);
+ConVar cv_path_danger_factor_max ("cb_path_danger_factor_max", "400", "Upper bound of danger factor that used to add additional danger to path based on practice.", true, 200.0f, 4800.0f);
 
 int Bot::findBestGoal () {
 
