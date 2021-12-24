@@ -9,7 +9,7 @@
 
 // fallback if no git or custom build
 #define MODULE_BUILD_HASH "0"
-#define MODULE_BUILD_AUTHOR "yapb@jeefo.net"
+#define MODULE_BUILD_AUTHOR "bariscodefx@protonmail.com"
 #define MODULE_BUILD_COUNT "0"
 #define MODULE_BUILD_MACHINE "localhost"
 #define MODULE_BUILD_COMPILER "unknown"
