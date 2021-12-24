@@ -5,7 +5,7 @@
 // SPDX-License-Identifier: MIT
 //
 
-#include <yapb.h>
+#include <csab.h>
 
 ConVar cv_shoots_thru_walls ("yb_shoots_thru_walls", "2", "Specifies whether bots able to fire at enemies behind the wall, if they hearing or suspecting them.", true, 0.0f, 2.0f);
 ConVar cv_ignore_enemies ("yb_ignore_enemies", "0", "Enables or disables searching world for enemies.");

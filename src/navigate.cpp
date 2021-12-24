@@ -5,7 +5,7 @@
 // SPDX-License-Identifier: MIT
 //
 
-#include <yapb.h>
+#include <csab.h>
 
 ConVar cv_whose_your_daddy ("yb_whose_your_daddy", "0", "Enables or disables extra hard difficulty for bots.");
 ConVar cv_path_heuristic_mode ("yb_path_heuristic_mode", "4", "Selects the heuristic function mode. For debug purposes only.", true, 0.0f, 4.0f);

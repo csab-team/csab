@@ -5,7 +5,7 @@
 // SPDX-License-Identifier: MIT
 //
 
-#include <yapb.h>
+#include <csab.h>
 
 ConVar cv_display_welcome_text ("yb_display_welcome_text", "1", "Enables or disables showing welcome message to host entity on game start.");
 ConVar cv_enable_query_hook ("yb_enable_query_hook", "0", "Enables or disables fake server queries response, that shows bots as real players in server browser.");

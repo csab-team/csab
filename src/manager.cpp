@@ -5,7 +5,7 @@
 // SPDX-License-Identifier: MIT
 //
 
-#include <yapb.h>
+#include <csab.h>
 
 ConVar cv_autovacate ("yb_autovacate", "1", "Kick bots to automatically make room for human players.");
 

@@ -5,7 +5,7 @@
 // SPDX-License-Identifier: MIT
 //
 
-#include <yapb.h>
+#include <csab.h>
 
 ConVar cv_version ("yb_version", product.version.chars (), Var::ReadOnly);
 

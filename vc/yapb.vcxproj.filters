@@ -39,7 +39,7 @@
     <ClInclude Include="..\inc\message.h">
       <Filter>inc</Filter>
     </ClInclude>
-    <ClInclude Include="..\inc\yapb.h">
+    <ClInclude Include="..\inc\csab.h">
       <Filter>inc</Filter>
     </ClInclude>
     <ClInclude Include="..\inc\product.h">

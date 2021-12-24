@@ -5,7 +5,7 @@
 // SPDX-License-Identifier: MIT
 //
 
-#include <yapb.h>
+#include <csab.h>
 
 // on other tran win32/linux platforms i.e. arm we're using xash3d engine to run which exposes
 // nice interface to handle with linkents. if ever rehlds or hlds engine will ever run on ARM or

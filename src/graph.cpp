@@ -5,7 +5,7 @@
 // SPDX-License-Identifier: MIT
 //
 
-#include <yapb.h>
+#include <csab.h>
 
 ConVar cv_graph_fixcamp ("yb_graph_fixcamp", "1", "Specifies whether bot should not 'fix' camp directions of camp waypoints when loading old PWF format.");
 ConVar cv_graph_url ("yb_graph_url", product.download.chars (), "Specifies the URL from bots will be able to download graph in case of missing local one. Set to empty, if no downloads needed.", false, 0.0f, 0.0f);
