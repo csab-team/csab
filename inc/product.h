@@ -31,16 +31,16 @@ public:
    StringRef name { "CSaB" };
    StringRef year { &__DATE__[7] };
    StringRef author { "CSaB Project" };
-   StringRef email { "yapb@jeefo.net" };
+   StringRef email { "bariscodefx@protonmail.com" };
    StringRef url { "https://yapb.jeefo.net/" };
    StringRef download { "graph.yapb.ru" };
-   StringRef folder { "yapb" };
+   StringRef folder { "csab" };
    StringRef logtag { "YB" };
    StringRef dtime { __DATE__ " " __TIME__ };
    StringRef date { __DATE__ };
    StringRef version { MODULE_BOT_VERSION "." MODULE_BUILD_COUNT };
-   StringRef cmdPri { "yb" };
-   StringRef cmdSec { "yapb" };
+   StringRef cmdPri { "cb" };
+   StringRef cmdSec { "csab" };
 };
 
 // expose product info
